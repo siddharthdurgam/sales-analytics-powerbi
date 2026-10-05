@@ -1,55 +1,67 @@
 # Sales Analytics Dashboard — SQL + Power BI
 
-> End-to-end sales analytics project combining SQL data preparation with an interactive Power BI dashboard to turn transactional data into actionable business insights.
+> End-to-end sales analytics project combining SQL analysis, Power BI data transformation, and interactive dashboarding to turn 150,000+ sales transactions into actionable business insights.
 
 ## 📊 Project Overview
 
-This project demonstrates a practical Business Analyst / Data Analyst workflow:
+This project analyzes **150,000+ transactions across 4 years** and provides stakeholders with a consolidated view of sales performance and market trends.
 
-**SQL Data → Data Preparation → Power BI Data Model → DAX Measures → Interactive Dashboard → Business Insights**
+The workflow follows a practical Business Analyst / Data Analyst process:
 
-The dashboard is designed to help stakeholders understand sales performance, customer behavior, product trends, and key business KPIs.
+**SQL Analysis → Data Cleaning & ETL → Power BI Data Model → Dashboard Development → Business Insights**
 
 ## 🎯 Business Objectives
 
-- Track overall sales and revenue performance
-- Identify high-performing products and categories
-- Analyze customer and regional performance
-- Monitor trends over time
-- Support data-driven business decisions
-- Present insights through an executive-friendly dashboard
+- Track overall revenue and sales performance
+- Analyze revenue and sales quantity by market
+- Identify top-performing customers and products
+- Monitor revenue trends over time
+- Compare market performance across regions
+- Reduce manual reporting effort through dashboard automation
+
+## 💼 Business Impact
+
+Based on the project documentation:
+
+- Reduced analysis time by **80%** through automated reporting
+- Enabled faster access to sales insights for stakeholders
+- Improved market performance tracking across regions
 
 ## 🛠️ Tools & Technologies
 
 | Technology | Purpose |
 |---|---|
-| **SQL / MySQL** | Data storage, querying and preparation |
-| **Power BI** | Data modeling, visualization and dashboarding |
-| **DAX** | KPI and analytical measures |
-| **Power Query** | Data transformation and cleaning |
-| **Excel / CSV** | Supporting data workflow where applicable |
+| **SQL / MySQL** | Initial data analysis and metric exploration |
+| **Power BI** | Data cleaning, transformation, modeling and visualization |
+| **Power Query** | ETL and data preparation |
+| **DAX** | Dashboard KPIs and analytical calculations |
 
-## 🔄 Analytics Workflow
+## 🔄 Project Workflow
 
-1. Load and inspect the source sales data.
-2. Prepare and query the data using SQL.
-3. Clean and transform the required fields.
-4. Import the prepared data into Power BI.
-5. Build relationships and the analytical data model.
-6. Create DAX measures for business KPIs.
-7. Design interactive visuals and filters.
-8. Analyze trends and identify actionable insights.
+### Phase 1 — Data Analysis & ETL
 
-## 📈 Dashboard Areas
+- Analyzed the sales dataset using SQL/MySQL
+- Used Power BI transformation tools for data preparation
+- Removed blank rows
+- Removed sales records with values ≤ 0
+- Normalized currency to INR
+- Removed duplicate transactions
 
-The Power BI report focuses on business-facing analysis such as:
+### Phase 2 — Dashboard Development
 
-- Sales / Revenue KPIs
-- Sales trends over time
-- Product and category performance
-- Customer analysis
-- Regional / geographic performance
-- Interactive filtering and drill-down analysis
+Built an interactive Power BI dashboard containing:
+
+- Total revenue tracking
+- Revenue by market
+- Sales quantity by market
+- Year and month filtering
+- Top 5 customers
+- Top 5 products
+- Revenue trend analysis
+
+## 🎥 Video Demonstration
+
+A project demonstration is available in the original project documentation.
 
 ## 📁 Repository Structure
 
@@ -62,23 +74,30 @@ sales-analytics-powerbi/
     └── project-notes.md
 ```
 
-> The `.pbix` Power BI report is intentionally maintained as a binary project file. If GitHub rejects or limits the upload, upload it manually through the repository's **Add file → Upload files** option.
+## 🚀 Setup & Usage
 
-## 🔐 Privacy & Security
+1. Install **Power BI Desktop**.
+2. Clone this repository or download `sales_dashboard.pbix`.
+3. Open `sales_dashboard.pbix` in Power BI Desktop.
+4. If a live database connection is required, configure the appropriate database connection settings in Power BI.
 
-No passwords, API keys, personal credentials, or private connection details should be committed to this public repository. Local database hostnames and machine-specific connection settings should be removed from SQL/configuration files before publishing.
+> Never commit passwords, API keys, or private database credentials to this public repository.
+
+## 🔐 Public Repository Safety
+
+Before publishing SQL/database files, remove machine-specific connection information, credentials, and other private configuration details. The public repository should contain only sanitized project assets.
 
 ## 💼 Business Analyst Relevance
 
-This project demonstrates skills relevant to Data Analyst and Business Analyst roles:
+This project demonstrates practical skills relevant to Data Analyst and Business Analyst roles:
 
 - SQL analysis
+- Data cleaning and ETL
 - KPI definition
-- Data validation
-- Requirements-oriented dashboard design
-- Business insights
-- Power BI reporting
-- Stakeholder-focused visualization
+- Power BI dashboard development
+- Business performance analysis
+- Trend analysis
+- Stakeholder-focused reporting
 - Data-driven decision support
 
 ## 👤 Author
